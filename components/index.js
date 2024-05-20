@@ -1,0 +1,1 @@
+export {default as Navar } from './Navbar'

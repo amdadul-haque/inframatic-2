@@ -1,9 +1,12 @@
 import Image from "next/image";
+import Hero from "./modules/hero";
 
 export default function Home() {
   return (
-    <main>
-      <h2 className="text-center">Here we go</h2>
-    </main>
+    <>
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 }

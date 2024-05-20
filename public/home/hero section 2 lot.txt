@@ -1,0 +1,10 @@
+export lottiefile hero section
+
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/f4f831d8-34d9-4050-a719-6aefc76f3658/JnAJITIZau.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+<iframe src="https://lottie.host/embed/f4f831d8-34d9-4050-a719-6aefc76f3658/JnAJITIZau.json"></iframe>
