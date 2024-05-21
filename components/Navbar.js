@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import { BsArrowRight } from 'react-icons/bs'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
   const navLinks = [
@@ -61,9 +63,20 @@ const Navbar = () => {
 
 
 
-        <div>
-          Join
-        </div>
+        <button className='hover:bg-[#D2F0F1] hover:text-prim-1 flex gap-4 items-center px-[22px] py-[14px] rounded-full text-sec-1 font-medium text-base'>
+          Join the Pioneer Program
+          <span className='inline-block w-8 overflow-hidden rounded-full bg-sec-1 '>
+            <motion.span className='flex w-16 h-8 rounded-full transition-colors duration-300 text-center items-center justify-around'
+              initial={{ x: -32 }}
+              whileHover={{ x: 0, backgroundColor: '#2496BE' }}
+              transition={{ duration: .3 }}
+            >
+              <BsArrowRight className='text-white-0 text-2xl' />
+              <BsArrowRight className='text-white-0 text-2xl' />
+            </motion.span>
+          </span>
+        </button>
+
       </div>
     </>
   )
