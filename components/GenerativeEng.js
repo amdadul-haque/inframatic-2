@@ -80,16 +80,16 @@ const GenerativeEng = () => {
           </div> */}
           <div className='grid sm:grid-cols-2 xl:grid-cols-3 gap-5'>
             {cards.map((card, index) => (
-              <div key={index} className='relative w-full h-[500px] flex items-center bg-white-0 rounded-[30px] flip-card'>
-                <div className='flip-card-inner'>
-                  <div className='flip-card-front'>
+              <div key={index} className='relative w-full h-[500px]  flip-card'>
+                <div className='flip-card-inner '>
+                  <div className='flip-card-front h-full bg-white-0 rounded-[30px] border flex flex-col justify-center  items-center'>
                     <span className='inline-block p-5 h-24 w-24 bg-white-0 shadow rounded-[30px] border'>
                       <img src={`/home/generative/${card.icon}`} alt={""} className='max-h-full mx-auto' />
                     </span>
                     <h3>{card.frontText}</h3>
-                    <p>{card.backText}</p>
                   </div>
-                  <div className='flip-card-back inline-block p-5 h-24 w-24 bg-white-0 shadow rounded-[30px] border'>
+                  <div className='flip-card-back w-full inline-block p-5 h-24 bg-white-0 shadow rounded-[30px] border'>
+                    <p>{card.backText}</p>
                   </div>
                 </div>
               </div>
