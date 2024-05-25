@@ -6,6 +6,25 @@ export const marqueeTexts = [
   'Maritime',
   'Transport'
 ]
+
+
+export const contactUsDescription = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio hic reprehenderit, sunt velit beatae porro doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export const humanAndMachineReadableData = [
   {
     id: 1,

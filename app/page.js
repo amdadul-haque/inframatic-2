@@ -1,13 +1,13 @@
 import Image from "next/image";
-import Hero from "./modules/hero";
-import GenerativeEng from "@/components/GenerativeEng";
+import ContactUs from "@/components/ContactUs";
+import Hero from "@/components/Hero";
 
 export default function Home() {
   return (
     <>
       <main>
         <Hero />
-        <GenerativeEng />
+        <ContactUs />
       </main>
     </>
   );

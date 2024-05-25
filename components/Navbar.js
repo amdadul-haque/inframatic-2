@@ -42,11 +42,12 @@ const Navbar = () => {
 
       <div className='bg-white-0 rounded-[30px] shadow px-10 xl:px-16 flex justify-between items-center'>
         <div className='flex items-center'>
-          <Image src='/home/logo-light.svg' alt='logo' width={240} height={40} />
-          {/* Logo */}
+          <Link href='/'>
+            <Image src='/home/logo-light.svg' alt='logo' width={240} height={40} />
+          </Link>
         </div>
 
-        <div className='flex gap-8'>
+        {/* <div className='flex gap-8'>
           {
             navLinks.map((link, index) => (
               <Link
@@ -59,11 +60,13 @@ const Navbar = () => {
               </Link>
             ))
           }
-        </div>
+        </div> */}
 
 
 
-        <button className='hover:bg-[#D2F0F1] hover:text-prim-1 flex gap-4 items-center px-[22px] py-[14px] rounded-full text-sec-1 font-medium text-base'>
+        <Link
+          href={"#contact"}
+          className='hover:bg-[#D2F0F1] hover:text-prim-1 flex gap-4 items-center px-[22px] py-[14px] rounded-full text-sec-1 font-medium text-base'>
           Join the Pioneer Program
           <span className='inline-block w-8 overflow-hidden rounded-full bg-sec-1 '>
             <motion.span className='flex w-16 h-8 rounded-full transition-colors duration-300 text-center items-center justify-around'
@@ -75,7 +78,7 @@ const Navbar = () => {
               <BsArrowRight className='text-white-0 text-2xl' />
             </motion.span>
           </span>
-        </button>
+        </Link>
 
       </div>
     </>

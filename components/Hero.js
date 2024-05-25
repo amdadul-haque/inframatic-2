@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import { BsArrowRight } from 'react-icons/bs';
 import { marqueeTexts } from '@/data';
+import Link from 'next/link';
 
 const Hero = () => {
 
@@ -38,13 +39,13 @@ const Hero = () => {
               <div className='text-prim-2 xl:text-[64px] leading-[96px] font-bold h-24 overflow-hidden mb-3'>
                 <motion.div
                   initial={{ y: 0 }}
-                animate={{
-                  y: [0, -96, -192, -288, -384, -480, 0], // Adjusted y values to account for all texts
-                  transition: {
-                    duration: 20,
-                    repeat: Infinity,
-                    times: [0, 0.17, 0.34, 0.51, 0.68, 0.85, 1], // Adjusted to include all keyframes
-                    ease: customEase
+                  animate={{
+                    y: [0, -96, -192, -288, -384, -480, 0], // Adjusted y values to account for all texts
+                    transition: {
+                      duration: 20,
+                      repeat: Infinity,
+                      times: [0, 0.17, 0.34, 0.51, 0.68, 0.85, 1], // Adjusted to include all keyframes
+                      ease: customEase
                     }
                   }}
                 >
@@ -56,22 +57,26 @@ const Hero = () => {
                 </motion.div>
               </div>
               <div>
-                <p>With extensive knowledge, supreme reasoning and comprehensive validation. Inframatic <span className='text-prim-1'>CoPilot</span> CoPilot can automate, innovate and accelerate your workflow.</p>
+                <p>With extensive knowledge, supreme reasoning and comprehensive validation. Inframatic <span className='text-prim-1'>CoPilot</span> can automate, innovate and accelerate your workflow.</p>
                 <p className='mt-3'>Welcome to the <span className='text-prim-1'>Generative Engineering</span> era.</p>
               </div>
-              <button className='bg-white-0 flex gap-4 items-center px-[22px] py-[14px] rounded-full mt-5 text-sec-1 font-medium text-base'>
-                Join the Pioneer Program
-                <span className='inline-block w-8 overflow-hidden rounded-full bg-sec-1 '>
-                  <motion.span className='flex w-16 h-8 rounded-full transition-colors duration-300 text-center items-center justify-around'
-                    initial={{ x: -32 }}
-                    whileHover={{ x: 0, backgroundColor: '#2496BE' }}
-                    transition={{ duration: .3 }}
-                  >
-                    <BsArrowRight className='text-white-0 text-2xl' />
-                    <BsArrowRight className='text-white-0 text-2xl' />
-                  </motion.span>
-                </span>
-              </button>
+              <div>
+                <Link
+                  href={'#contact'}
+                  className='bg-white-0 inline-flex gap-4 items-center px-[22px] py-[14px] rounded-full mt-5 text-sec-1 font-medium text-base'>
+                  Join the Pioneer Program
+                  <span className='inline-block w-8 overflow-hidden rounded-full bg-sec-1 '>
+                    <motion.span className='flex w-16 h-8 rounded-full transition-colors duration-300 text-center items-center justify-around'
+                      initial={{ x: -32 }}
+                      whileHover={{ x: 0, backgroundColor: '#2496BE' }}
+                      transition={{ duration: .3 }}
+                    >
+                      <BsArrowRight className='text-white-0 text-2xl' />
+                      <BsArrowRight className='text-white-0 text-2xl' />
+                    </motion.span>
+                  </span>
+                </Link>
+              </div>
             </div>
             <div className='w-full lg:w-1/2 relative transition-all duration-300 ease-in-out' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
               <img src="/home/hero/square.svg" alt="square" className='mx-auto translate-y-32 z-[0]' />
