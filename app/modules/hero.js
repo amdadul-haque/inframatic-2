@@ -33,7 +33,7 @@ const Hero = () => {
     'Maritime',
     'Transport'
   ]
-  const customEase = [0.68, -0.55, 0.27, 1.55];
+  const customEase = [1, 0, 0, 1];
   return (
     <>
       <div className='py-14 hero-bg pb-24 xl:h-[1140px]'>
@@ -42,21 +42,21 @@ const Hero = () => {
           <div className='w-full flex justify-between items-center'>
             <div className='w-full lg:w-1/2 max-w-[416px] mx-auto'>
               <h2 className='text-sec-2 xl:text-[64px] font-bold'>Engineering</h2>
-              <div className='text-prim-2 xl:text-[64px] leading-[96px] font-bold h-20 pt-2 overflow-hidden my-3'>
+              <div className='text-prim-2 xl:text-[64px] leading-[96px] font-bold h-24 overflow-hidden mb-3'>
                 <motion.div
                   initial={{ y: 0 }}
-                  animate={{
-                    y: [0, -24 * 4, -48 * 4, -72 * 4, -96 * 4, 0],
-                    transition: {
-                      duration: 10,
-                      repeat: Infinity,
-                      times: [0, 0.2, 0.4, 0.6, 0.8, 1],
-                      ease: customEase
+                animate={{
+                  y: [0, -96, -192, -288, -384, -480, 0], // Adjusted y values to account for all texts
+                  transition: {
+                    duration: 20,
+                    repeat: Infinity,
+                    times: [0, 0.17, 0.34, 0.51, 0.68, 0.85, 1], // Adjusted to include all keyframes
+                    ease: customEase
                     }
                   }}
                 >
                   {texts.map((text, index) => (
-                    <motion.span className='block -translate-y-28' key={index}>
+                    <motion.span className='block' key={index}>
                       {text}
                     </motion.span>
                   ))}
