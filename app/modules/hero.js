@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import { BsArrowRight } from 'react-icons/bs';
+import { marqueeTexts } from '@/data';
 
 const Hero = () => {
 
@@ -25,14 +26,6 @@ const Hero = () => {
     setHoverZone(0);
   };
 
-  const texts = [
-    'Copilot',
-    'Civil',
-    'Structural',
-    'Geotechnical',
-    'Maritime',
-    'Transport'
-  ]
   const customEase = [1, 0, 0, 1];
   return (
     <>
@@ -55,7 +48,7 @@ const Hero = () => {
                     }
                   }}
                 >
-                  {texts.map((text, index) => (
+                  {marqueeTexts.map((text, index) => (
                     <motion.span className='block' key={index}>
                       {text}
                     </motion.span>
