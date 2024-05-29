@@ -6,11 +6,12 @@ import { toast } from "react-toastify";
 import { motion } from 'framer-motion';
 
 const ContactUs = () => {
-  const [email, setEmail] = useState('')
+  const [email, setEmail] = useState("")
   const [name, setName] = useState('')
   const [message, setMessage] = useState('')
 
   const [isLoading, setIsLoading] = useState(false);
+
   const handleButtonClick = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -28,10 +29,8 @@ const ContactUs = () => {
       });
       const result = await response.json();
       if (result.success) {
-        // Handle success (e.g., show a success message)
         console.log(result.message);
       } else {
-        // Handle error (e.g., show an error message)
         console.error(result.message);
       }
     } catch (error) {
@@ -63,7 +62,10 @@ const ContactUs = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <span className='inline-block w-8 overflow-hidden rounded-full bg-prim-1 absolute right-5 top-3 scale-[1.15]'>
+                <button className='inline-block w-8 overflow-hidden rounded-full bg-prim-1 absolute right-5 top-3 scale-[1.15] disabled:cursor-not-allowed'
+                  disabled={email === ""}
+                  onClick={email != "" && handleButtonClick}
+                >
                   <motion.span className='flex w-16 h-8 rounded-full transition-colors duration-300 text-center items-center justify-around'
                     initial={{ x: -32 }}
                     whileHover={{ x: 0, backgroundColor: '#00215A' }}
@@ -72,7 +74,7 @@ const ContactUs = () => {
                     <BsChevronRight className='text-white-0 text-xl' />
                     <BsChevronRight className='text-white-0 text-xl' />
                   </motion.span>
-                </span>
+                </button>
                 <img src="./home/contact-us/mail.svg" alt="" className='absolute left-5 top-4' />
               </div>
             </form>

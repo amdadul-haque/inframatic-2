@@ -15,8 +15,8 @@ export async function POST(request) {
 
     const mailOption = {
       from: fromMail,
-      to: "haque1807107@stud.kuet.ac.bd",
-      // to: "bigbinservices@gmail.com",
+      // to: "haque1807107@stud.kuet.ac.bd",
+      to: "info@inframatic.ai",
       subject: `${name} is looking for you.`,
       html: `
         <h3>You have a new message from ${fromMail}</h3>
