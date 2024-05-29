@@ -1,7 +1,9 @@
 'use client'
 import { contactUsDescription } from '@/data'
 import React, { useState } from 'react'
+import { BsArrowRight, BsChevronRight } from 'react-icons/bs';
 import { toast } from "react-toastify";
+import { motion } from 'framer-motion';
 
 const ContactUs = () => {
   const [email, setEmail] = useState('')
@@ -49,18 +51,29 @@ const ContactUs = () => {
             <h2 className='text-2xl md:text-3xl text-white-0'>Join the Pioneear Program</h2>
             <p className='text-white-0 my-5'>{contactUsDescription}</p>
             <form onSubmit={handleButtonClick} className="flex flex-col gap-4 sm:gap-8">
-              <div>
+              <div className='relative'>
                 {/* <h3 className="mb-2 text-base">Email *</h3> */}
                 <input
                   type="email"
                   name="email"
                   id="email"
                   placeholder="Email"
-                  className="w-full form-textarea py-2 px-4 rounded border border-gray-300 outline-none focus:ring focus:ring-brand-1 focus:ring-opacity-50"
+                  className="w-full form-textarea py-2 px-4 pl-14 border border-gray-300 outline-none focus:ring focus:ring-brand-1 focus:ring-opacity-50 rounded-full bg-black-1 text-white-3"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
+                <span className='inline-block w-8 overflow-hidden rounded-full bg-sec-1 absolute right-5 top-1'>
+                  <motion.span className='flex w-16 h-8 rounded-full transition-colors duration-300 text-center items-center justify-around'
+                    initial={{ x: -32 }}
+                    whileHover={{ x: 0, backgroundColor: '#2496BE' }}
+                    transition={{ duration: .3 }}
+                  >
+                    <BsChevronRight className='text-white-0 text-2xl' />
+                    <BsChevronRight className='text-white-0 text-2xl' />
+                  </motion.span>
+                </span>
+                <img src="./home/contact-us/mail.svg" alt="" className='absolute left-5 top-2'/>
               </div>
             </form>
           </div>
