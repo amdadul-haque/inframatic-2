@@ -1,28 +1,88 @@
-export const marqueeTexts = [
-  'Copilot',
-  'Civils',
-  'Structural',
-  'Geotechnical',
-  'Maritime',
-  'Transport'
-]
+
+export const hero = {
+  title: "Engineering",
+  description: {
+    part1: "With extensive knowledge, supreme reasoning and comprehensive validation. Inframatic",
+    highlighted: "CoPilot",
+    part2: "can automate, innovate and accelerate your workflow.",
+  },
+  description2: {
+    part1: "Welcome to the",
+    highlighted: "Generative Engineering",
+    part2: "era",
+  },
+  marqueeTexts: [
+    'Copilot',
+    'Civil',
+    'Structural',
+    'Geotechnical',
+    'Maritime',
+    'Transport'
+  ]
+}
 
 
-export const contactUsDescription = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio hic reprehenderit, sunt velit beatae porro doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus."
+export const knowledge = {
+  baseImage: "/home/knowledge/base.svg",
+  sections: [
+    {
+      id: 1,
+      title: "Knowledge base",
+      description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio hic reprehenderit, sunt velit beatae porro doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus. doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus.",
+      image: "/home/knowledge/1.svg"
+    },
+    {
+      id: 2,
+      title: "Code",
+      description: "distinctio dolores provident beatae dicta consequatur dolorum. Deserunt autem aliquam molestias laborum porro id! Harum a reprehenderit atque dolorum placeat nulla ratione ad maxime laboriosam, tempore praesentium illum, eligendi quasi quos debitis iste cum aliquid aspernatur. Facilis corrupti repudiandae quisquam velit illo aspernatur saepe quos, odit quas aliquid, obcaecati voluptatem error eligendi ",
+      image: "/home/knowledge/2.svg"
+    },
+    {
+      id: 3,
+      title: "Copilot",
+      description: "corrupti sint ex debitis perspiciatis libero neque eligendi dolor. Explicabo eos quam, vel pariatur veniam animi minus sapiente ad quae nam excepturi laboriosam itaque dolores odit provident odio totam tenetur quidem facere iste dolorum deleniti omnis. Nemo fugiat aperiam animi exercitationem velit itaque, repellat adipisci totam nobis veritatis doloremque. Tempora, facilis aperiam dignissimos ipsam hic sequi sed?",
+      image: "/home/knowledge/3.svg"
+    },
+  ]
+}
 
 
+export const contact = {
+  title: "Join the Pioneear Program",
+  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio hic reprehenderit, sunt velit beatae porro doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus."
+}
 
+export const blog = {
+  title: "Blog",
+  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio hic reprehenderit, sunt velit beatae porro doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus.",
+  blogs: [
+    {
+      id: 1,
+      title: "How civil engineers can use generative AI to create value in projects",
+      link: "https://www.newcivilengineer.com/opinion/how-civil-engineers-can-use-generative-ai-to-create-value-in-projects-11-12-2023/",
+      image: "/home/blog/1.jpg",
+      publishedDate: "11-12-2023", // dd-mm-yyyy
+      viewCount: 100,
+    },
+    {
+      id: 2,
+      title: "How civil engineers can use their data to create verifiable AI systems",
+      link: "https://www.ice.org.uk/news-insight/news-and-blogs/ice-blogs/the-civil-engineer-blog/civil-engineers-can-use-data-verifiable-ai-systems",
+      image: "/home/blog/2.webp",
+      publishedDate: "19-03-2024", // dd-mm-yyyy
+      viewCount: "200",
+    },
+    {
+      id: 3,
+      title: "",
+      link: "",
+      image: "",
+      publishedDate: "",
+      viewCount: "",
+    }
+  ]
 
-
-
-
-
-
-
-
-
-
-
+}
 
 
 export const humanAndMachineReadableData = [

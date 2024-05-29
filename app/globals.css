@@ -7,7 +7,7 @@
 }
 
 .section-wrapper-sm {
-  @apply w-full max-w-[96%] md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg mx-auto;
+  @apply w-[96%] max-w-[1200px] mx-auto;
 }
 
 .hero-icons {
@@ -16,6 +16,10 @@
 
 .hero-bg {
   background: url('./../public/home/hero/hero.png') no-repeat center center/cover;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-bold;
 }
 
 

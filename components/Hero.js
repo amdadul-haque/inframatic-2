@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import { BsArrowRight } from 'react-icons/bs';
-import { marqueeTexts } from '@/data';
+import { hero, marqueeTexts } from '@/data';
 import Link from 'next/link';
 
 const Hero = () => {
@@ -33,23 +33,23 @@ const Hero = () => {
       <div className='py-14 hero-bg pb-24 xl:h-[1140px]'>
         <div className='section-wrapper flex flex-col gap-[140px]'>
           <Navbar />
-          <div className='w-full flex justify-between items-center'>
+          <div className='w-full flex flex-col-reverse gap-10 md:flex-row justify-between items-center'>
             <div className='w-full lg:w-1/2 max-w-[416px] mx-auto'>
-              <h2 className='text-sec-2 xl:text-[64px] font-bold'>Engineering</h2>
-              <div className='text-prim-2 xl:text-[64px] leading-[96px] font-bold h-24 overflow-hidden mb-3'>
+              <h2 className='text-sec-2 text-[40px] sm:text-[44px] md:text-[52px] lg:text-[56px] xl:text-[64px] font-bold'>{hero?.title}</h2>
+              <div className='text-prim-2 text-[40px] sm:text-[44px] md:text-[52px] lg:text-[56px] xl:text-[64px] leading-normal font-bold h-16 lg:h-20 xl:h-24 overflow-hidden mb-3'>
                 <motion.div
                   initial={{ y: 0 }}
                   animate={{
-                    y: [0, -96, -192, -288, -384, -480, 0], // Adjusted y values to account for all texts
+                    y: [0, -96, -192, -288, -384, -480, 0], 
                     transition: {
                       duration: 20,
                       repeat: Infinity,
-                      times: [0, 0.17, 0.34, 0.51, 0.68, 0.85, 1], // Adjusted to include all keyframes
+                      times: [0, 0.17, 0.34, 0.51, 0.68, 0.85, 1],
                       ease: customEase
                     }
                   }}
                 >
-                  {marqueeTexts.map((text, index) => (
+                  {hero?.marqueeTexts.map((text, index) => (
                     <motion.span className='block' key={index}>
                       {text}
                     </motion.span>
@@ -57,8 +57,8 @@ const Hero = () => {
                 </motion.div>
               </div>
               <div>
-                <p>With extensive knowledge, supreme reasoning and comprehensive validation. Inframatic <span className='text-prim-1'>CoPilot</span> can automate, innovate and accelerate your workflow.</p>
-                <p className='mt-3'>Welcome to the <span className='text-prim-1'>Generative Engineering</span> era.</p>
+                <p>{hero?.description?.part1} <span className='text-prim-1'>{hero.description.highlighted}</span> {hero?.description.part2}</p>
+                <p className='mt-3'>{hero?.description2?.part1} <span className='text-prim-1'>{hero.description2.highlighted}</span> {hero?.description2?.part2}</p>
               </div>
               <div>
                 <Link
