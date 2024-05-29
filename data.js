@@ -48,8 +48,8 @@ export const knowledge = {
 
 
 export const contact = {
-  title: "Join the Pioneear Program",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio hic reprehenderit, sunt velit beatae porro doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus."
+  title: "Join the Pioneer Program",
+  description: "Get early access, exclusive support and the opportunity to influence our development roadmap."
 }
 
 export const blog = {
@@ -72,14 +72,7 @@ export const blog = {
       publishedDate: "19-03-2024", // dd-mm-yyyy
       viewCount: "200",
     },
-    {
-      id: 3,
-      title: "",
-      link: "",
-      image: "",
-      publishedDate: "",
-      viewCount: "",
-    }
+   
   ]
 
 }
