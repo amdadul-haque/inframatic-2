@@ -12,7 +12,7 @@ const getTimeAgo = (dateString) => {
 
 const Blog = () => {
   return (
-    <div className='py-28 bg-prim-3/40' id='blog'>
+    <div className='py-28 bg-prim-3/40 px-2' id='blog'>
       <div className='section-wrapper-sm'>
         <div className='mx-auto max-w-[600px]'>
           <h2 className='section-title text-center text-sec-1'>{blog.title}</h2>
@@ -22,13 +22,13 @@ const Blog = () => {
           {blog.blogs.map((blog) => (
             <Link
               key={blog.id}
-              className='w-full sm:w-1/2 lg:w-1/3 hover:scale-105 transition-transform duration-300 ease-in-out '
+              className='w-full sm:w-1/2 lg:w-1/3 lg:hover:scale-105 transition-transform duration-300 ease-in-out '
               href={blog.link} target='_blank'
             >
               <div className='bg-white rounded-lg mt-8 relative'>
                 {
                   blog.image ?
-                    <img src={blog.image} alt={blog.title} className='w-full aspect-video object-cover rounded-lg hover:shadow-md' />
+                    <img src={blog.image} alt={blog.title} className='w-full aspect-video object-cover rounded-lg lg:hover:shadow-md' />
                     :
                     <div className='w-full bg-black-1 rounded-lg aspect-video' />
                 }

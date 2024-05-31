@@ -1,6 +1,6 @@
 'use client'
 import Navbar from '@/components/Navbar';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import { BsArrowRight } from 'react-icons/bs';
 import { hero, marqueeTexts } from '@/data';
@@ -9,6 +9,9 @@ import Link from 'next/link';
 const Hero = () => {
 
   const [hoverZone, setHoverZone] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+
 
   const handleMouseMove = (e) => {
     const { top, height } = e.target.getBoundingClientRect();
@@ -28,19 +31,43 @@ const Hero = () => {
   };
 
   const customEase = [1, 0, 0, 1];
+
+
+  const [yValues, setYValues] = useState([])
+
+  useEffect(() => {
+    if (window.innerWidth >= 1280) {
+      setYValues([0, -96, -192, -288, -384, -480, 0])
+    }
+    else if (window.innerWidth >= 1024 && window.innerWidth < 1280) {
+      setYValues([0, -88, -176, -264, -352, -440, 0])
+    }
+    else if (window.innerWidth >= 768 && window.innerWidth < 1024) {
+      setYValues([0, -80, -160, -240, -320, -400, 0])
+    }
+    else if (window.innerWidth >= 640 && window.innerWidth < 768) {
+      setYValues([0, -72, -144, -216, -288, -360, 0])
+    }
+    else {
+      setYValues([0, -60, -120, -180, -240, -300, 0])
+    }
+  }, [])
+
+  console.log(yValues)
+
   return (
     <>
-      <div className='py-14 hero-bg pb-24 xl:h-[1140px]'>
-        <div className='section-wrapper flex flex-col gap-[140px]'>
+      <div className='py-12 md:py-14 md:pb-24 xl:h-[1140px] hero- bg-gradient-to-tr from-transparent to-prim-3/70 relative'>
+        <div className='section-wrapper flex flex-col gap-28 md:gap-32 lg:gap-y-36'>
           <Navbar />
-          <div className='w-full flex flex-col-reverse gap-10 md:flex-row justify-between items-center'>
-            <div className='w-full lg:w-1/2 max-w-[416px] mx-auto'>
+          <div className='w-full flex flex-col-reverse gap-10 lg:flex-row justify-between items-center'>
+            <div className='w-[90%] lg:w-1/2 max-w-[416px] sm:max-w-auto mx-auto mt-14 lg:mt-0'>
               <h2 className='text-sec-2 text-[40px] sm:text-[44px] md:text-[52px] lg:text-[56px] xl:text-[64px] font-bold'>{hero?.title}</h2>
-              <div className='text-prim-2 text-[40px] sm:text-[44px] md:text-[52px] lg:text-[56px] xl:text-[64px] leading-normal font-bold h-16 lg:h-20 xl:h-24 overflow-hidden mb-3'>
+              <div className='text-prim-2 text-[40px] sm:text-[44px] md:text-[52px] lg:text-[56px] xl:text-[64px] font-bold h-16 lg:h-20 xl:h-24 overflow-hidden mb-3 mt-2'>
                 <motion.div
                   initial={{ y: 0 }}
                   animate={{
-                    y: [0, -96, -192, -288, -384, -480, 0], 
+                    y: yValues,
                     transition: {
                       duration: 20,
                       repeat: Infinity,
@@ -78,9 +105,9 @@ const Hero = () => {
                 </Link>
               </div>
             </div>
-            <div className='w-full lg:w-1/2 relative transition-all duration-300 ease-in-out' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-              <img src="/home/hero/square.svg" alt="square" className='mx-auto translate-y-32 z-[0]' />
-              <img src="/home/hero/shadow.svg" alt="shadow" className='mx-auto hero-icons translate-y-52' />
+            <div className='w-[90%] sm:max-w-[400px] lg:max-w-full lg:w-1/2 relative transition-all duration-300 ease-in-out' onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+              <img src="/home/hero/square.svg" alt="square" className='mx-auto translate-y-[30%] xl:translate-y-[20%] z-[0] scale-[1.18] xl:scale-100' />
+              <img src="/home/hero/shadow.svg" alt="shadow" className='mx-auto hero-icons translate-y-[60%] xl:translate-y-[50%]' />
 
               <img src="/home/hero/copilot.svg" alt="square" className={`hero-icons z-[1] ${hoverZone === 1 ? '-translate-y-10' : ''}`} />
               <img src="/home/hero/civil.svg" alt="civil" className={`hero-icons z-[2] ${hoverZone === 2 ? '-translate-y-8' : ''}`} />
@@ -88,6 +115,15 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        {/* <div className='absolute w-full bottom-0 translate-y-[50%] left-0 right-0 mx-auto rounded p-5'>
+          <div className='w-full p-5 rounded '>
+            <div className='bg-sec-1 h-52  mx-auto'>
+
+            </div>
+          </div>
+        </div> */}
+
       </div >
     </>
   )

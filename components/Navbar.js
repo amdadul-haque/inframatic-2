@@ -40,10 +40,10 @@ const Navbar = () => {
   return (
     <>
 
-      <div className='bg-white-0 rounded-[30px] shadow px-10 xl:px-16 flex justify-between items-center'>
+      <div className='bg-white-0 rounded-[30px] shadow  md:px-10 xl:px-16 flex justify-between items-center mx-2'>
         <div className='flex items-center'>
           <Link href='/'>
-            <Image src='/home/logo-light.svg' alt='logo' width={240} height={40} />
+            <Image src='/home/logo-light.svg' alt='logo' width={240} height={40} className='w-[80%] sm:w-auto lg:my-2' />
           </Link>
         </div>
 
@@ -62,14 +62,13 @@ const Navbar = () => {
           }
         </div> */}
 
-
-
         <Link
           href={"#contact"}
-          className='hover:bg-[#D2F0F1] hover:text-prim-1 flex gap-4 items-center px-[22px] py-[14px] rounded-full text-sec-1 font-medium text-base'>
-          Join the Pioneer Program
-          <span className='inline-block w-8 overflow-hidden rounded-full bg-sec-1 '>
-            <motion.span className='flex w-16 h-8 rounded-full transition-colors duration-300 text-center items-center justify-around'
+          className='md:hover:bg-prim-3 md:hover:text-prim-1 transition-all duration-300 group flex md:gap-4 items-center lg:px-[22px] py-[14px] rounded-full text-sec-1 font-medium text-sm md:text-base'>
+
+          <span>Join the Pioneer Program</span>
+          <span className='w-8 overflow-hidden rounded-full bg-sec-1 hidden md:inline-block'>
+            <motion.span className='flex w-16 h-8 rounded-full transition-colors duration-300 text-center items-center justify-around group-hover:bg-prim-1'
               initial={{ x: -32 }}
               whileHover={{ x: 0, backgroundColor: '#2496BE' }}
               transition={{ duration: .3 }}

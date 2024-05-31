@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .section-wrapper {
-  @apply w-full max-w-[96%] md:max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-[1440px] mx-auto;
+  @apply w-full max-w-[96%] md:max-w-screen-sm lg:max-w-[90%] 2xl:max-w-[1440px] mx-auto;
 }
 
 .section-wrapper-sm {

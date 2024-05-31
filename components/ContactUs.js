@@ -43,10 +43,10 @@ const ContactUs = () => {
     }
   };
   return (
-    <div className='py-40' id='contact'>
-      <div className='section-wrapper-sm rounded-xl sm:rounded-2xl md:rounded-3xl xl:rounded-[34px] p bg-gradient-to-r from-sec-1 to-prim-1'>
-        <div className={`w-full flex flex-col-reverse md:flex-row justify-between items-center gap-10 px-16 xl:pl-32 relative pb-10 lg:pb-0 lg:h-[383px]`}>
-          <div className='max-w-[410px]'>
+    <div className='py-20 sm:py-24 md:py-32 lg:py-40 px-2' id='contact'>
+      <div className='section-wrapper-sm rounded-xl sm:rounded-2xl md:rounded-3xl xl:rounded-[34px] bg-gradient-to-r from-sec-1 to-prim-1'>
+        <div className={`w-full flex flex-col-reverse lg:flex-row justify-between items-center gap-10 px-5 md:px-16 xl:pl-32 relative pb-10 lg:pb-0 lg:h-[383px]`}>
+          <div className='max-w-[410px] py-5 sm:py-10 lg:py-0'>
             <h2 className='text-2xl md:text-3xl text-white-0'>{contact?.title}</h2>
             <p className='text-white-0 my-5'>{contact?.description}</p>
             <form onSubmit={handleButtonClick} className="flex flex-col gap-4 sm:gap-8">
@@ -64,7 +64,7 @@ const ContactUs = () => {
                 />
                 <button className='inline-block w-8 overflow-hidden rounded-full bg-prim-1 absolute right-5 top-3 scale-[1.15] disabled:cursor-not-allowed'
                   disabled={email === ""}
-                  onClick={email != "" && handleButtonClick}
+                  onClick={handleButtonClick}
                 >
                   <motion.span className='flex w-16 h-8 rounded-full transition-colors duration-300 text-center items-center justify-around'
                     initial={{ x: -32 }}
@@ -79,11 +79,11 @@ const ContactUs = () => {
               </div>
             </form>
           </div>
-          <div className='lg:max-w-1/2 md:absolute bottom-0 right-10 lg:w-[433px] lg:h-[485px] overflow-hidden' >
+          <div className='lg:max-w-1/2 lg:absolute bottom-0 right-10 lg:w-[433px] lg:h-[485px] overflow-hidden' >
             <img
               src="./home/contact-us/matic.png"
               alt="matic"
-              className='object-contain md:translate-y-[18%] hover:translate-y-[0%] transition-transform duration-300'
+              className='object-contain translate-y-[18%] hover:translate-y-[0%] transition-transform duration-300'
             />
           </div>
         </div>
