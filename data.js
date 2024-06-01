@@ -23,24 +23,26 @@ export const hero = {
 
 
 export const knowledge = {
+  title: "Welcome to the Generative Engineering Era",
+  description: "Introducing Inframatic's innovative Engineering CoPilot. Leveraging extensive knowledge, supreme reasoning, and comprehensive validation, the CoPilot is designed to enhance your engineering workflows. Our mission is to transform the industry through the development of Generative Engineering, ensuring that every step is backed by thorough validation and verification processes.",
   baseImage: "/home/knowledge/base.svg",
   sections: [
     {
       id: 1,
-      title: "Knowledge base",
-      description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio hic reprehenderit, sunt velit beatae porro doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus. doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus.",
+      title: "Knowledge Base",
+      description: "Our Knowledge Base integrates live project information and past project data, providing a comprehensive repository for all technical resources. It supports semantic knowledge graphs, custom schema, and ensures structured search capabilities, enhancing access to critical information and standards.",
       image: "/home/knowledge/1.svg"
     },
     {
       id: 2,
-      title: "Code",
-      description: "distinctio dolores provident beatae dicta consequatur dolorum. Deserunt autem aliquam molestias laborum porro id! Harum a reprehenderit atque dolorum placeat nulla ratione ad maxime laboriosam, tempore praesentium illum, eligendi quasi quos debitis iste cum aliquid aspernatur. Facilis corrupti repudiandae quisquam velit illo aspernatur saepe quos, odit quas aliquid, obcaecati voluptatem error eligendi ",
+      title: "Engineering Reasoning Engine",
+      description: "The Engineering Reasoning Engine is designed to handle complex calculations, validate technical documents, and integrate multiple standards. It operates with transparency, ensuring that you can understand, interrogate, and implement the results effectively.",
       image: "/home/knowledge/2.svg"
     },
     {
       id: 3,
-      title: "Copilot",
-      description: "corrupti sint ex debitis perspiciatis libero neque eligendi dolor. Explicabo eos quam, vel pariatur veniam animi minus sapiente ad quae nam excepturi laboriosam itaque dolores odit provident odio totam tenetur quidem facere iste dolorum deleniti omnis. Nemo fugiat aperiam animi exercitationem velit itaque, repellat adipisci totam nobis veritatis doloremque. Tempora, facilis aperiam dignissimos ipsam hic sequi sed?",
+      title: "UI",
+      description: "Our intuitive UI supports interactive graphs, decision hierarchies, and comprehensive validation at every stage. It ensures that all outputs are fully referenced and easily interrogated, providing a seamless user experience for efficient project management.",
       image: "/home/knowledge/3.svg"
     },
   ]
@@ -49,7 +51,7 @@ export const knowledge = {
 
 export const contact = {
   title: "Join the Pioneer Program",
-  description: "Get early access, exclusive support and the opportunity to influence our development roadmap."
+  description: "Get early access, exclusive support and the opportunity to influence our development roadmap. Enter your email below for more information"
 }
 
 export const blog = {
