@@ -72,7 +72,14 @@ export const blog = {
       publishedDate: "19-03-2024", // dd-mm-yyyy
       viewCount: "200",
     },
-   
+    {
+      id: 3,
+      title: "Embracing AI in Engineering: Routes to Acceptance",
+      link: "https://www.linkedin.com/pulse/embracing-ai-engineering-routes-acceptance-inframatic-ai-yo03e/?trackingId=Xmb8ti4LkgIYTTJHubizWw%3D%3D",
+      image: "/home/blog/Generative Heirarchy_v3.png",
+      publishedDate: "31-05-2024", // dd-mm-yyyy
+      viewCount: "200",
+    },
   ]
 
 }
