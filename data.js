@@ -2,14 +2,14 @@
 export const hero = {
   title: "Engineering",
   description: {
-    part1: "With extensive knowledge, supreme reasoning and comprehensive validation. Inframatic",
-    highlighted: "CoPilot",
-    part2: "can automate, innovate and accelerate your workflow.",
+    part1: "Introducing the",
+    highlighted: "Engineering CoPilot",
+    part2: ", a state-of-the-art AI Assistant developed specifically for Civil Engineering. The state-of-the-art Engineering Reasoning Engine can curate, validate, and leverage knowledge from your own projects and its own library of technical resources. Whether you're formulating complex calculations, writing technical reports, or generating robust solutions to cross-sector engineering challenges within highly regulated industries, Engineering CoPilot is here to help.",
   },
   description2: {
-    part1: "Welcome to the",
+    part1: "Our mission is to develop",
     highlighted: "Generative Engineering",
-    part2: "era",
+    part2: "that helps You solve the biggest engineering challenges imaginable. Join us to transform the industry, and then the World.",
   },
   marqueeTexts: [
     'Copilot',
