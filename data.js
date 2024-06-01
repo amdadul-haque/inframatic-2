@@ -4,9 +4,14 @@ export const hero = {
   description: {
     part1: "Introducing the",
     highlighted: "Engineering CoPilot",
-    part2: ". A state-of-the-art AI system developed for Civil Engineering that includes an Engineering Reasoning Engine that can curate, validate, and leverage knowledge from your own projects and its own library of technical resources. Whether you're formulating complex calculations, writing technical reports, or generating robust solutions to cross-sector engineering challenges within highly regulated industries, Engineering CoPilot is here to help.",
+    part2: ". A state-of-the-art AI system developed for Civil Engineering that includes an Engineering Reasoning Engine that can curate, validate, and leverage knowledge from your own projects and its own library of technical resources."
   },
   description2: {
+    part1: "Whether you're formulating complex calculations, writing technical reports, or generating robust solutions to cross-sector engineering challenges within highly regulated industries,",
+    highlighted: "Engineering CoPilot",
+    part2: "is here to help."
+  },
+  description3: {
     part1: "Our mission is to develop",
     highlighted: "Generative Engineering",
     part2: "that helps You solve the biggest engineering challenges imaginable. Join us to transform the industry, and then the World.",
@@ -24,29 +29,34 @@ export const hero = {
 
 export const knowledge = {
   title: "Welcome to the Generative Engineering Era",
-  description: "Introducing Inframatic's innovative Engineering CoPilot. Leveraging extensive knowledge, supreme reasoning, and comprehensive validation, the CoPilot is designed to enhance your engineering workflows. Our mission is to transform the industry through the development of Generative Engineering, ensuring that every step is backed by thorough validation and verification processes.",
+  description: {
+    part1: "Introducing the Engineering CoPilot. Leveraging extensive knowledge, supreme reasoning, and comprehensive validation, the CoPilot is designed to enhance your engineering workflows. Our mission is to transform the industry through the development of",
+    highlighted: "Generative Engineering", 
+    part2: "ensuring that every step is backed by thorough validation and verification processes.",
+  },
   baseImage: "/home/knowledge/base.svg",
   sections: [
     {
       id: 1,
       title: "Knowledge Base",
-      description: "Our Knowledge Base integrates live project information and past project data, providing a comprehensive repository for all technical resources. It supports semantic knowledge graphs, custom schema, and ensures structured search capabilities, enhancing access to critical information and standards.",
+      description: "Our Knowledge Base integrates live project information and past project data, providing a comprehensive repository for all technical resources. It supports semantic knowledge graphs, custom schema, and ensures structured search capabilities, enhancing access to critical information and standards with the Engineering CoPilot.",
       image: "/home/knowledge/1.svg"
     },
     {
       id: 2,
       title: "Engineering Reasoning Engine",
-      description: "The Engineering Reasoning Engine is designed to handle complex calculations, validate technical documents, and integrate multiple standards. It operates with transparency, ensuring that you can understand, interrogate, and implement the results effectively.",
+      description: "The Engineering Reasoning Engine is designed to handle complex calculations, validate technical documents, and integrate multiple standards. The CoPilot operates with transparency, ensuring that you can understand, interrogate, and implement the results effectively.",
       image: "/home/knowledge/2.svg"
     },
     {
       id: 3,
       title: "UI",
-      description: "Our intuitive UI supports interactive graphs, decision hierarchies, and comprehensive validation at every stage. It ensures that all outputs are fully referenced and easily interrogated, providing a seamless user experience for efficient project management.",
+      description: "Our intuitive UI supports interactive graphs, decision hierarchies, and comprehensive validation at every stage. It ensures that all outputs are fully referenced and easily interrogated, providing a seamless user experience for efficient project management with the Engineering Reasoning Engine.",
       image: "/home/knowledge/3.svg"
     },
   ]
 }
+
 
 
 export const contact = {
