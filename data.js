@@ -30,7 +30,7 @@ export const hero = {
 export const knowledge = {
   title: "Welcome to the Generative Engineering Era",
   description: {
-    part1: "Introducing the Engineering CoPilot. Leveraging extensive knowledge, supreme reasoning, and comprehensive validation, the CoPilot is designed to enhance your engineering workflows. Our mission is to transform the industry through the development of",
+    part1: "Introducing the Engineering CoPilot. Leveraging extensive knowledge, supreme reasoning, and comprehensive validation, the CoPilot is designed to enhance your engineering workflows. Our mission is to transform the industry through the development of"
     highlighted: "Generative Engineering", 
     part2: "ensuring that every step is backed by thorough validation and verification processes.",
   },
@@ -39,19 +39,19 @@ export const knowledge = {
     {
       id: 1,
       title: "Knowledge Base",
-      description: "Our Knowledge Base integrates live project information and past project data, providing a comprehensive repository for all technical resources. It supports semantic knowledge graphs, custom schema, and ensures structured search capabilities, enhancing access to critical information and standards with the Engineering CoPilot.",
+      description: "Our Knowledge Base integrates live project information and past project data, providing a comprehensive repository for all technical resources. It supports semantic knowledge graphs, custom schema, and ensures structured search capabilities, enhancing access to critical information and standards.",
       image: "/home/knowledge/1.svg"
     },
     {
       id: 2,
       title: "Engineering Reasoning Engine",
-      description: "The Engineering Reasoning Engine is designed to handle complex calculations, validate technical documents, and integrate multiple standards. The CoPilot operates with transparency, ensuring that you can understand, interrogate, and implement the results effectively.",
+      description: "The Engineering Reasoning Engine is designed to handle complex calculations, validate technical documents, and integrate multiple standards. It operates with transparency, ensuring that you can understand, interrogate, and implement the results effectively.",
       image: "/home/knowledge/2.svg"
     },
     {
       id: 3,
       title: "UI",
-      description: "Our intuitive UI supports interactive graphs, decision hierarchies, and comprehensive validation at every stage. It ensures that all outputs are fully referenced and easily interrogated, providing a seamless user experience for efficient project management with the Engineering Reasoning Engine.",
+      description: "Our intuitive UI supports interactive graphs, decision hierarchies, and comprehensive validation at every stage. It ensures that all outputs are fully referenced and easily interrogated, providing a seamless user experience for efficient project management.",
       image: "/home/knowledge/3.svg"
     },
   ]
