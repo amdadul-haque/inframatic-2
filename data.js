@@ -54,7 +54,13 @@ export const contact = {
 
 export const blog = {
   title: "Blog",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio hic reprehenderit, sunt velit beatae porro doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus.",
+  description: {
+    part1: "Introducing the latest thinking in AI-driven engineering. The Inframatic",
+    highlighted: "Engineering CoPilot",
+    part2: "combines extensive knowledge, supreme reasoning, and comprehensive validation to automate, innovate, and accelerate your workflow. Join our",
+    highlighted2: "Pioneer Program",
+    part3: "to be at the forefront of this transformation.",
+  },
   blogs: [
     {
       id: 1,
