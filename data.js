@@ -4,9 +4,7 @@ export const hero = {
   description: {
     part1: "Introducing the",
     highlighted: "Engineering CoPilot",
-    part2: "- a state-of-the-art AI system developed for Civil Engineering. It includes an",
-    highlighted2: "Engineering Reasoning Engine",
-    part3: "that can curate, validate, and leverage knowledge from your own projects and its own library of technical resources. Whether you're formulating complex calculations, writing technical reports, or generating robust solutions to cross-sector engineering challenges within highly regulated industries, Engineering CoPilot is here to help.",
+    part2: "- a state-of-the-art AI system developed for Civil Engineering. It includes an Engineering Reasoning Engine that can curate, validate, and leverage knowledge from your own projects and its own library of technical resources. Whether you're formulating complex calculations, writing technical reports, or generating robust solutions to cross-sector engineering challenges within highly regulated industries, Engineering CoPilot is here to help.",
   },
   description2: {
     part1: "Our mission is to develop",
