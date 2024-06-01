@@ -119,38 +119,39 @@ export const humanAndMachineReadableData = [
 
 export const faqData = [
   {
-    question: "How is the data validated",
-    answer: "",
+    question: "How is the data validated?",
+    answer: "Our system incorporates multi-stage validation processes, ensuring that every piece of data and every calculation is thoroughly checked and verified before being used. This includes automated checks, peer reviews, and cross-referencing with established standards and guidelines.",
   },
   {
-    question: "Do you offer custo finetuned models?",
-    answer: "",
+    question: "Do you offer custom fine-tuned models?",
+    answer: "Yes, we offer custom fine-tuning of models to meet specific project requirements. Our team works closely with clients to understand their needs and develop tailored AI solutions that integrate seamlessly with their existing workflows.",
   },
   {
     question: "What makes this different from other RAG solutions?",
-    answer: "",
+    answer: "Our solution integrates semantic knowledge graphs with structured data, providing a more comprehensive and accurate response system. It goes beyond simple retrieval augmented generation (RAG) by ensuring that all responses are validated and referenced against a vast knowledge base, making it highly reliable for engineering tasks.",
   },
   {
-    question: "How long does a web design project take?",
-    answer: "",
+    question: "What is Generative Engineering?",
+    answer: "Generative Engineering leverages AI to automate and optimize the engineering design process. It involves using advanced algorithms and models to generate, validate, and refine engineering solutions, ensuring they meet specific project requirements and standards. This approach enhances efficiency, accuracy, and innovation in engineering projects.",
   },
   {
-    question: "Why should be buy from you - won't Microsoft or Google do something similar in the future?",
-    answer: "",
+    question: "Why should we buy from you - won't Microsoft or Google do something similar in the future?",
+    answer: "While larger companies like Microsoft or Google may develop similar technologies, our focus is on providing specialized, high-quality solutions tailored specifically for the engineering industry. Our deep industry expertise, combined with our commitment to transparency and rigorous validation, ensures that our solutions meet the unique needs of engineers.",
   },
   {
     question: "I deal with confidential data that cannot leave our servers, can this be installed locally?",
-    answer: "",
+    answer: "Yes, our system can be installed locally to ensure that all data remains secure and compliant with your organization's confidentiality requirements. We provide comprehensive support for on-premises installations to meet your specific security needs.",
   },
   {
     question: "How can the system be relied upon to actually do engineering?",
-    answer: "",
+    answer: "Our system is designed to handle complex engineering tasks with high accuracy. It incorporates advanced AI models that have been fine-tuned for engineering applications, and every output is validated against industry standards and guidelines. This ensures that the system can be trusted for critical engineering work.",
   },
   {
-    question: "Is there a risk that GPT5/6/7 will invalidate the approach?",
-    answer: "",
+    question: "Is there a risk that GPT-5/6/7 will invalidate the approach?",
+    answer: "Our approach is built on a foundation of continuous improvement and adaptability. While advancements in AI models like GPT-5/6/7 will bring new capabilities, our system is designed to integrate and leverage these advancements, ensuring that it remains at the cutting edge of technology and continues to provide reliable, state-of-the-art solutions.",
   },
 ];
+
 
 
 
