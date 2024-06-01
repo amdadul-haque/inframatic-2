@@ -56,13 +56,7 @@ export const contact = {
 
 export const blog = {
   title: "Blog",
-  description: {
-    part1: "Here is our latest thinking in AI-driven engineering that we are integrating into the Inframatic",
-    highlighted: "Engineering CoPilot",
-    part2: "Join our",
-    highlighted2: "Pioneer Program",
-    part3: "to be at the forefront of this transformation.",
-  },
+  description: "Blogs",
   blogs: [
     {
       id: 1,
