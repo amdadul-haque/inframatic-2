@@ -27,13 +27,14 @@ const Knowledge = () => {
             </div>
           </div>
           <div className='w-full lg:1/2 flex flex-col items-center justify-center p-10'>
+            <h1 className='section-title text-white-0 text-center'>{knowledge.title}</h1>
+            <p className='text-white-0 pt-4 text-center'>{knowledge.description}</p>
             <h2 className='section-title text-white-0 text-center'>{knowledge.sections[index].title}</h2>
-            <p className=' text-white-0 pt-8 text-center'>{knowledge.sections[index].description}</p>
+            <p className='text-white-0 pt-8 text-center'>{knowledge.sections[index].description}</p>
           </div>
         </div>
       </div>
     </div>
-
   )
 }
 
