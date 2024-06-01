@@ -18,6 +18,26 @@ export const hero = {
     'Geotechnical',
     'Maritime',
     'Transport'
+  ],
+  cards: [
+    {
+      id: 1,
+      title: "Validate",
+      description: "Rigorous validation of data, knowledge and processes.",
+      icon: "/home/icons/tick.png"
+    },
+    {
+      id: 2,
+      title: "Verify",
+      description: "Comprehensive testing for complete technical integrity.",
+      icon: "/home/icons/tick-2.png"
+    },
+    {
+      id: 3,
+      title: "Apply",
+      description: "Innovate with confidence and precision.",
+      icon: "/home/icons/tick.png"
+    }
   ]
 }
 

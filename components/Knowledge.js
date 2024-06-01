@@ -14,14 +14,14 @@ const Knowledge = () => {
       onClick={handleClick}
     >
       <div className='section-wrapper-sm'>
-        <div className='w-full flex flex-col lg:flex-row lg:justify-between gap-20'>
+        <div className='w-full flex flex-col lg:flex-row lg:justify-between gap-5 sm:gap-8 md:gap-12 lg:gap-16 xl:gap-20'>
           <div className='w-full lg:1/2 flex justify-center lg:scale-150'>
             <div className='max-w-[90%] mx-auto relative'>
               <Image src={knowledge?.baseImage} alt='knowledge' width={500} height={500} className='' />
-              <Image src={knowledge?.sections[index].image} alt='knowledge' width={250} height={250}
-                className={`absolute left-1/2 translate-x-[-50%] md:h-[270px] lg:h-[280px] xl:h-[300px]
+              <Image src={knowledge?.sections[index].image} alt='knowledge' width={200} height={200}
+                className={`absolute left-1/2 translate-x-[-50%] md:h-[270px] lg:h-[300px] xl:h-[330px]
               ${index == 0 && 'top-[-18%] lg:top-[-15%]'} 
-              ${index == 1 && 'h-[200px] top-[-5%]'} 
+              ${index == 1 && 'h-[200px] top-[-10%] lg:top-[-10%]'} 
               ${index == 2 && 'top-[-30%]'}`}
               />
             </div>

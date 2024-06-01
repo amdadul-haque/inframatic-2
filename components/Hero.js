@@ -57,7 +57,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className='py-12 md:py-14 md:pb-24 xl:h-[1140px] hero- bg-gradient-to-tr from-transparent to-prim-3/70 relative'>
+      <div className='py-12 md:py-34 pb-28 md:pb-32 lg:pb-48 hero-bg bg-gradient-to-tr from-transparent to-prim-3/70 relative'>
         <div className='section-wrapper flex flex-col gap-28 md:gap-32 lg:gap-y-36'>
           <Navbar />
           <div className='w-full flex flex-col-reverse gap-10 lg:flex-row justify-between items-center'>
