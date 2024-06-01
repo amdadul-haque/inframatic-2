@@ -4,7 +4,9 @@ export const hero = {
   description: {
     part1: "Introducing the",
     highlighted: "Engineering CoPilot",
-    part2: ", a state-of-the-art AI Assistant developed specifically for Civil Engineering. The state-of-the-art Engineering Reasoning Engine can curate, validate, and leverage knowledge from your own projects and its own library of technical resources. Whether you're formulating complex calculations, writing technical reports, or generating robust solutions to cross-sector engineering challenges within highly regulated industries, Engineering CoPilot is here to help.",
+    part2: "- a state-of-the-art AI system developed for Civil Engineering. It includes an",
+    highlighted2: "Engineering Reasoning Engine",
+    part3: "that can curate, validate, and leverage knowledge from your own projects and its own library of technical resources. Whether you're formulating complex calculations, writing technical reports, or generating robust solutions to cross-sector engineering challenges within highly regulated industries, Engineering CoPilot is here to help.",
   },
   description2: {
     part1: "Our mission is to develop",
@@ -55,7 +57,7 @@ export const contact = {
 }
 
 export const blog = {
-  title: "Blog",
+  title: "Here is our latest thinking that we are integrating into the Inframatic Engineering CoPilot.",
   description: "Blogs",
   blogs: [
     {
