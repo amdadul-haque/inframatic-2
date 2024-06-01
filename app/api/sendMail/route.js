@@ -8,8 +8,8 @@ export async function POST(request) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: 'amdadul1807107@gmail.com',
-        pass: 'ctyplxmrxbcoasox',
+        user: 'michael.rustell25@gmail.com',
+        pass: 'anzv gqte wpqn uvub',
       }
     })
 
@@ -17,7 +17,7 @@ export async function POST(request) {
       from: fromMail,
       // to: "haque1807107@stud.kuet.ac.bd",
       to: "info@inframatic.ai",
-      subject: `${name} is looking for you.`,
+      subject: `${name} Pioneer Program`,
       html: `
         <h3>You have a new message from ${fromMail}</h3>
         <p>${message}</p>
