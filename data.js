@@ -2,17 +2,17 @@
 export const hero = {
   title: "Engineering",
   description: {
-    part1: "With extensive knowledge, supreme reasoning and comprehensive validation. Inframatic",
-    highlighted: "CoPilot",
-    part2: "can automate, innovate and accelerate your workflow.",
+    part1: "Introducing the",
+    highlighted: "Engineering CoPilot",
+    part2: "- a state-of-the-art AI system developed for Civil Engineering. It includes an Engineering Reasoning Engine that can curate, validate, and leverage knowledge from your own projects and its own library of technical resources. Whether you're formulating complex calculations, writing technical reports, or generating robust solutions to cross-sector engineering challenges within highly regulated industries, Engineering CoPilot is here to help.",
   },
   description2: {
-    part1: "Welcome to the",
+    part1: "Our mission is to develop",
     highlighted: "Generative Engineering",
-    part2: "era",
+    part2: "that helps You solve the biggest engineering challenges imaginable. Join us to transform the industry, and then the World.",
   },
   marqueeTexts: [
-    'Copilot',
+    'CoPilot',
     'Civil',
     'Structural',
     'Geotechnical',
@@ -43,38 +43,45 @@ export const hero = {
 
 
 export const knowledge = {
+  title: "Welcome to the Generative Engineering Era",
+  description: {
+    part1: "Introducing the Engineering CoPilot. Leveraging extensive knowledge, supreme reasoning, and comprehensive validation, the CoPilot is designed to enhance your engineering workflows. Our mission is to transform the industry through the development of",
+    highlighted: "Generative Engineering", 
+    part2: "ensuring that every step is backed by thorough validation and verification processes.",
+  },
   baseImage: "/home/knowledge/base.svg",
   sections: [
     {
       id: 1,
-      title: "Knowledge base",
-      description: "lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio hic reprehenderit, sunt velit beatae porro doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus. doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus.",
+      title: "Knowledge Base",
+      description: "Our Knowledge Base integrates live project information and past project data, providing a comprehensive repository for all technical resources. It supports semantic knowledge graphs, custom schema, and ensures structured search capabilities, enhancing access to critical information and standards.",
       image: "/home/knowledge/1.svg"
     },
     {
       id: 2,
-      title: "Code",
-      description: "distinctio dolores provident beatae dicta consequatur dolorum. Deserunt autem aliquam molestias laborum porro id! Harum a reprehenderit atque dolorum placeat nulla ratione ad maxime laboriosam, tempore praesentium illum, eligendi quasi quos debitis iste cum aliquid aspernatur. Facilis corrupti repudiandae quisquam velit illo aspernatur saepe quos, odit quas aliquid, obcaecati voluptatem error eligendi ",
+      title: "Engineering Reasoning Engine",
+      description: "The Engineering Reasoning Engine is designed to handle complex calculations, validate technical documents, and integrate multiple standards. It operates with transparency, ensuring that you can understand, interrogate, and implement the results effectively.",
       image: "/home/knowledge/2.svg"
     },
     {
       id: 3,
-      title: "Copilot",
-      description: "corrupti sint ex debitis perspiciatis libero neque eligendi dolor. Explicabo eos quam, vel pariatur veniam animi minus sapiente ad quae nam excepturi laboriosam itaque dolores odit provident odio totam tenetur quidem facere iste dolorum deleniti omnis. Nemo fugiat aperiam animi exercitationem velit itaque, repellat adipisci totam nobis veritatis doloremque. Tempora, facilis aperiam dignissimos ipsam hic sequi sed?",
+      title: "UI",
+      description: "Our intuitive UI supports interactive graphs, decision hierarchies, and comprehensive validation at every stage. It ensures that all outputs are fully referenced and easily interrogated, providing a seamless user experience for efficient project management.",
       image: "/home/knowledge/3.svg"
     },
   ]
 }
 
 
+
 export const contact = {
   title: "Join the Pioneer Program",
-  description: "Get early access, exclusive support and the opportunity to influence our development roadmap."
+  description: "Get early access, exclusive support and the opportunity to influence our development roadmap. Enter your email below for more information"
 }
 
 export const blog = {
-  title: "Blog",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio hic reprehenderit, sunt velit beatae porro doloribus autem modi. Molestiae sapiente explicabo quis deserunt! Adipisci, unde at? Consectetur, incidunt temporibus.",
+  title: "Blogs",
+  description: "Here is our latest thinking that we are integrating into the Inframatic Engineering CoPilot.",
   blogs: [
     {
       id: 1,
@@ -92,7 +99,14 @@ export const blog = {
       publishedDate: "19-03-2024", // dd-mm-yyyy
       viewCount: "200",
     },
-   
+    {
+      id: 3,
+      title: "Embracing AI in Engineering: Routes to Acceptance",
+      link: "https://www.linkedin.com/pulse/embracing-ai-engineering-routes-acceptance-inframatic-ai-yo03e/?trackingId=Xmb8ti4LkgIYTTJHubizWw%3D%3D",
+      image: "/home/blog/Generative Heirarchy_v3.png",
+      publishedDate: "31-05-2024", // dd-mm-yyyy
+      viewCount: "200",
+    },
   ]
 
 }
@@ -124,38 +138,39 @@ export const humanAndMachineReadableData = [
 
 export const faqData = [
   {
-    question: "How is the data validated",
-    answer: "",
+    question: "How is the data validated?",
+    answer: "Our system incorporates multi-stage validation processes, ensuring that every piece of data and every calculation is thoroughly checked and verified before being used. This includes automated checks, peer reviews, and cross-referencing with established standards and guidelines.",
   },
   {
-    question: "Do you offer custo finetuned models?",
-    answer: "",
+    question: "Do you offer custom fine-tuned models?",
+    answer: "Yes, we offer custom fine-tuning of models to meet specific project requirements. Our team works closely with clients to understand their needs and develop tailored AI solutions that integrate seamlessly with their existing workflows.",
   },
   {
     question: "What makes this different from other RAG solutions?",
-    answer: "",
+    answer: "Our solution integrates semantic knowledge graphs with structured data, providing a more comprehensive and accurate response system. It goes beyond simple retrieval augmented generation (RAG) by ensuring that all responses are validated and referenced against a vast knowledge base, making it highly reliable for engineering tasks.",
   },
   {
-    question: "How long does a web design project take?",
-    answer: "",
+    question: "What is Generative Engineering?",
+    answer: "Generative Engineering leverages AI to automate and optimize the engineering design process. It involves using advanced algorithms and models to generate, validate, and refine engineering solutions, ensuring they meet specific project requirements and standards. This approach enhances efficiency, accuracy, and innovation in engineering projects.",
   },
   {
-    question: "Why should be buy from you - won't Microsoft or Google do something similar in the future?",
-    answer: "",
+    question: "Why should we buy from you - won't Microsoft or Google do something similar in the future?",
+    answer: "While larger companies like Microsoft or Google may develop similar technologies, our focus is on providing specialized, high-quality solutions tailored specifically for the engineering industry. Our deep industry expertise, combined with our commitment to transparency and rigorous validation, ensures that our solutions meet the unique needs of engineers.",
   },
   {
     question: "I deal with confidential data that cannot leave our servers, can this be installed locally?",
-    answer: "",
+    answer: "Yes, our system can be installed locally to ensure that all data remains secure and compliant with your organization's confidentiality requirements. We provide comprehensive support for on-premises installations to meet your specific security needs.",
   },
   {
     question: "How can the system be relied upon to actually do engineering?",
-    answer: "",
+    answer: "Our system is designed to handle complex engineering tasks with high accuracy. It incorporates advanced AI models that have been fine-tuned for engineering applications, and every output is validated against industry standards and guidelines. This ensures that the system can be trusted for critical engineering work.",
   },
   {
-    question: "Is there a risk that GPT5/6/7 will invalidate the approach?",
-    answer: "",
+    question: "Is there a risk that GPT-5/6/7 will invalidate the approach?",
+    answer: "Our approach is built on a foundation of continuous improvement and adaptability. While advancements in AI models like GPT-5/6/7 will bring new capabilities, our system is designed to integrate and leverage these advancements, ensuring that it remains at the cutting edge of technology and continues to provide reliable, state-of-the-art solutions.",
   },
 ];
+
 
 
 
