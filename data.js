@@ -1,16 +1,8 @@
 
 export const hero = {
   title: "Engineering",
-  description: {
-    part1: "Introducing the",
-    highlighted: "Engineering CoPilot",
-    part2: "- a state-of-the-art AI system developed for Civil Engineering. It includes an Engineering Reasoning Engine that can curate, validate, and leverage knowledge from your own projects and its own library of technical resources. Whether you're formulating complex calculations, writing technical reports, or generating robust solutions to cross-sector engineering challenges within highly regulated industries, Engineering CoPilot is here to help.",
-  },
-  description2: {
-    part1: "Our mission is to develop",
-    highlighted: "Generative Engineering",
-    part2: "that helps You solve the biggest engineering challenges imaginable. Join us to transform the industry, and then the World.",
-  },
+  description: "Introducing the {Engineering CoPilot} a state-of-the-art AI system developed for Civil Engineering. It includes an Engineering Reasoning Engine that can curate, validate, and leverage knowledge from your own projects and its own library of technical resources. Whether you're formulating complex calculations, writing technical reports, or generating robust solutions to cross-sector engineering challenges within highly regulated industries, Engineering CoPilot is here to help.",
+  description2: "Our mission is to develop {Generative Engineering} that helps You solve the biggest engineering challenges imaginable. Join us to transform the industry, and then the World.",
   marqueeTexts: [
     'CoPilot',
     'Civil',
@@ -43,12 +35,8 @@ export const hero = {
 
 
 export const knowledge = {
-  title: "Welcome to the Generative Engineering Era",
-  description: {
-    part1: "Introducing the Engineering CoPilot. Leveraging extensive knowledge, supreme reasoning, and comprehensive validation, the CoPilot is designed to enhance your engineering workflows. Our mission is to transform the industry through the development of",
-    highlighted: "Generative Engineering", 
-    part2: "ensuring that every step is backed by thorough validation and verification processes.",
-  },
+  title: "Welcome to the {Generative Engineering} Era",
+  description: "Introducing the Engineering CoPilot. Leveraging extensive knowledge, supreme reasoning, and comprehensive validation, the CoPilot is designed to enhance your engineering workflows. Our mission is to transform the industry through the development of {Generative Engineering} ensuring that every step is backed by thorough validation and verification processes.",
   baseImage: "/home/knowledge/base.svg",
   sections: [
     {

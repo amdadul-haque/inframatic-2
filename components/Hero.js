@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { BsArrowRight } from 'react-icons/bs';
 import { hero, marqueeTexts } from '@/data';
 import Link from 'next/link';
+import { renderHighlightedText } from './libs/libs';
 
 const Hero = () => {
 
@@ -55,6 +56,8 @@ const Hero = () => {
 
   console.log(yValues)
 
+
+
   return (
     <>
       <div className='py-12 md:py-34 pb-28 md:pb-32 lg:pb-48 hero-bg bg-gradient-to-tr from-transparent to-prim-3/70 relative'>
@@ -84,8 +87,8 @@ const Hero = () => {
                 </motion.div>
               </div>
               <div>
-                <p>{hero?.description?.part1} <span className='text-prim-1'>{hero.description.highlighted}</span> {hero?.description.part2}</p>
-                <p className='mt-3'>{hero?.description2?.part1} <span className='text-prim-1'>{hero.description2.highlighted}</span> {hero?.description2?.part2}</p>
+                <p className=''>{renderHighlightedText(hero?.description)}</p>
+                <p className='mt-3'>{renderHighlightedText(hero?.description2)}</p>
               </div>
               <div>
                 <Link
