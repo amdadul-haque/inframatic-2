@@ -1,4 +1,4 @@
-import { Blog, ContactUs, Hero, Knowledge } from "@/components";
+import { Blog, ContactUs, FAQ, FormModal, Hero, Knowledge } from "@/components";
 
 export default function Home() {
   return (
@@ -8,6 +8,8 @@ export default function Home() {
         <Knowledge />
         <Blog />
         <ContactUs />
+        <FAQ />
+        {/* <FormModal /> */}
       </main>
     </>
   );

@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { BsArrowRight, BsChevronRight } from 'react-icons/bs';
 import { toast } from "react-toastify";
 import { motion } from 'framer-motion';
+import { renderHighlightedText } from './libs/libs';
 
 const ContactUs = () => {
   const [email, setEmail] = useState("")
@@ -28,16 +29,15 @@ const ContactUs = () => {
         }),
       });
       const result = await response.json();
-      if (result.success) {
-        console.log(result.message);
+      if (result?.message) {
+        toast.success('Email Sent Successfully');
       } else {
-        console.error(result.message);
+        toast.error('Failed to Send Email');
       }
     } catch (error) {
       console.error('Error:', error);
     } finally {
       setIsLoading(false);
-      toast.success('Email Sent Successfully');
       setEmail('');
       setMessage('');
     }
@@ -47,8 +47,8 @@ const ContactUs = () => {
       <div className='section-wrapper-sm rounded-xl sm:rounded-2xl md:rounded-3xl xl:rounded-[34px] bg-gradient-to-r from-sec-1 to-prim-1'>
         <div className={`w-full flex flex-col-reverse lg:flex-row justify-between items-center gap-10 px-5 md:px-16 xl:pl-32 relative pb-10 lg:pb-0 lg:h-[383px]`}>
           <div className='max-w-[410px] py-5 sm:py-10 lg:py-0'>
-            <h2 className='text-2xl md:text-3xl text-white-0'>{contact?.title}</h2>
-            <p className='text-white-0 my-5'>{contact?.description}</p>
+            <h2 className='text-2xl md:text-3xl text-white-0'>{renderHighlightedText(contact?.title)}</h2>
+            <p className='text-white-0 my-5'>{renderHighlightedText(contact?.description)}</p>
             <form onSubmit={handleButtonClick} className="flex flex-col gap-4 sm:gap-8">
               <div className='relative'>
                 {/* <h3 className="mb-2 text-base">Email *</h3> */}

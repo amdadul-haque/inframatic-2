@@ -4,6 +4,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 import { motion } from 'framer-motion'
+import FormModal from './FormModal'
 
 const Navbar = () => {
   const navLinks = [
@@ -37,8 +38,13 @@ const Navbar = () => {
 
   const [activeLink, setActiveLink] = useState(navLinks[0])
 
+  const [isOpen, setIsOpen] = useState(false);
+
+
   return (
     <>
+
+      {isOpen && <FormModal isOpen={isOpen} setIsOpen={setIsOpen} />}
 
       <div className='bg-white-0 rounded-[30px] shadow  md:px-10 xl:px-16 flex justify-between items-center mx-2'>
         <div className='flex items-center'>
@@ -62,9 +68,11 @@ const Navbar = () => {
           }
         </div> */}
 
-        <Link
-          href={"#contact"}
-          className='md:hover:bg-prim-3 md:hover:text-prim-1 transition-all duration-300 group flex md:gap-4 items-center lg:px-[22px] py-[14px] rounded-full text-sec-1 font-medium text-sm md:text-base'>
+        <button
+          // href={"#contact"}
+          className='md:hover:bg-prim-3 md:hover:text-prim-1 transition-all duration-300 group flex md:gap-4 items-center lg:px-[22px] py-[14px] rounded-full text-sec-1 font-medium text-sm md:text-base'
+          onClick={() => setIsOpen(true)}
+        >
 
           <span>Join the Pioneer Program</span>
           <span className='w-8 overflow-hidden rounded-full bg-sec-1 hidden md:inline-block'>
@@ -77,7 +85,7 @@ const Navbar = () => {
               <BsArrowRight className='text-white-0 text-2xl' />
             </motion.span>
           </span>
-        </Link>
+        </button>
 
       </div>
     </>

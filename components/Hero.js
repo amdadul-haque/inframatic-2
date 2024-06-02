@@ -54,14 +54,13 @@ const Hero = () => {
     }
   }, [])
 
-  console.log(yValues)
 
 
 
   return (
     <>
       <div className='py-12 md:py-34 pb-28 md:pb-32 lg:pb-48 hero-bg bg-gradient-to-tr from-transparent to-prim-3/70 relative'>
-        <div className='section-wrapper flex flex-col gap-28 md:gap-32 lg:gap-y-36'>
+        <div className='section-wrapper flex flex-col gap-28 md:gap-24'>
           <Navbar />
           <div className='w-full flex flex-col-reverse gap-10 lg:flex-row justify-between items-center'>
             <div className='w-[90%] lg:w-1/2 max-w-[416px] sm:max-w-auto mx-auto mt-14 lg:mt-0'>
@@ -119,14 +118,25 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* <div className='absolute w-full bottom-0 translate-y-[50%] left-0 right-0 mx-auto rounded p-5'>
-          <div className='w-full p-5 rounded '>
-            <div className='bg-sec-1 h-52  mx-auto'>
-
+        <div className='absolute bottom-0 translate-y-[50%] left-0 right-0 mx-auto rounded '>
+          <div className='w-auto drop-shadow-xl mx-auto p-5 max-w-[1000px] rounded-[20px]'>
+            <div className='grid grid-cols-2 lg:grid-cols-4 bg-gradient-to-tr from-prim-2 to to-prim-1 rounded-xl'>
+              {
+                hero.cards.map((card, index) => (
+                  <div key={index} className='flex flex-col gap-5 items-center group hover:bg-sec-1 transition px-3 py-6 md:first:rounded-s-xl md:last:rounded-e-xl'>
+                    <div className='bg-sec-1 w-10 h-10 rounded-full flex items-center justify-center'>
+                      <img src={card.icon} alt={card.title} />
+                    </div>
+                    <div>
+                      <h3 className='text-black-1 group-hover:text-white-0 transition font-bold text-lg text-center'>{card.title}</h3>
+                      <p className='text-black-1 group-hover:text-white-0 transition text-sm text-center'>{card.description}</p>
+                    </div>
+                  </div>
+                ))
+              }
             </div>
           </div>
-        </div> */}
-
+        </div>
       </div >
     </>
   )
