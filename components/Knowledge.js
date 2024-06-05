@@ -15,7 +15,7 @@ const Knowledge = () => {
   }
 
   return (
-    <div className='py-20 pb-0 xl:pt-32 bg-sec-2 bg-gradient-to-r from-sec-1 to-prim-1 cursor-pointer'
+    <div className='py-20 pb-0 pt-[220px] xl:pt-32 bg-sec-2 bg-gradient-to-r from-sec-1 to-prim-1 cursor-pointer'
       onClick={handleClick}
     >
       <div className='section-wrapper-sm'>
